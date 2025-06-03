@@ -34,14 +34,14 @@ const SocialMediaLinks = () => {
   const socialLinks = [
     {
       name: "Twitter",
-      url: "#",
+      url: "https://x.com/zestertech",
     },
     {
       name: "LinkedIn",
       url: "#",
     },
     {
-      name: "GitHub",
+      name: "Instagram",
       url: "#",
     },
     {
