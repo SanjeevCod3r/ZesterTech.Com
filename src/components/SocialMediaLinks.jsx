@@ -46,7 +46,7 @@ const SocialMediaLinks = () => {
     },
     {
       name: "WhatsApp",
-      url: "#",
+      url: "https://wa.me/message/3GE5JHLTIOBRI1",
     },
   ];
 

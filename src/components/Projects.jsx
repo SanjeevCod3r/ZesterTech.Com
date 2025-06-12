@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const leftColumnProjects = [
     {
-      title: "Punto Pago",
+      title: "AWC Software",
       url: "https://cdn.cuberto.com/cb/projects/puntopago/cover.mp4",
     },
     {
@@ -20,22 +20,22 @@ const Projects = () => {
       url: "https://cdn.cuberto.com/cb/projects/zelt/cover.mp4",
     },
     {
-      title: "Cisco",
+      title: "Sprouts",
       url: "https://cdn.cuberto.com/cb/projects/cisco/cover.mp4",
     }
   ];
 
   const rightColumnProjects = [
     {
-      title: "Kelvin Zero",
+      title: "Wyzard",
       url: "https://cdn.cuberto.com/cb/projects/kzero/cover.mp4?2",
     },
     {
-      title: "Magma",
+      title: "Delta",
       url: "https://cdn.cuberto.com/cb/projects/magma/cover.mp4",
     },
     {
-      title: "Flipaclip",
+      title: "Rareinfra",
       url: "https://cdn.cuberto.com/cb/projects/flipaclip/cover.mp4",
     },
     {
@@ -43,7 +43,7 @@ const Projects = () => {
       url: "https://cdn.cuberto.com/cb/projects/potion/cover.mp4",
     },
     {
-      title: "Ferrumpipe",
+      title: "Neo20",
       url: "https://cdn.cuberto.com/cb/projects/ferrumpipe/cover.mp4",
     }
   ];
