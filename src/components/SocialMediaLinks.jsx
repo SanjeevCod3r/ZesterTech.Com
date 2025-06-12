@@ -45,7 +45,7 @@ const SocialMediaLinks = () => {
       url: "#",
     },
     {
-      name: "Portfolio",
+      name: "WhatsApp",
       url: "#",
     },
   ];

@@ -23,7 +23,7 @@ const Hero = () => {
           and
         </div>
       </div>
-      <div>motion agency</div>
+      <div>tech agency</div>
     </div>
   );
 };

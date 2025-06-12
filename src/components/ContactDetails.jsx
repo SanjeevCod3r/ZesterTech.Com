@@ -19,7 +19,7 @@ const ContactDetails = () => {
             transition={{ duration: 0.1 }}
             className="absolute inset-0 py-1 md:py-2 text-white bg-stone-950 border-none rounded-full"
           >
-            info@zestertech.com
+            support@zestertech.com
           </motion.div>
           <motion.div
             variants={{
@@ -29,7 +29,7 @@ const ContactDetails = () => {
             transition={{ duration: 0.1, type: "tween", ease: "easeIn" }}
             className="relative rounded-full py-1 md:py-2 px-6 text-stone-950 bg-stone-200 border-none"
           >
-            info@zestertech.com
+            support@zestertech.com
           </motion.div>
         </motion.div>
 
@@ -47,7 +47,7 @@ const ContactDetails = () => {
             transition={{ duration: 0.1 }}
             className="absolute inset-0 py-1 md:py-2 text-white bg-stone-950 border-none rounded-full"
           >
-            +91 7607320240
+            +91 8601329877
           </motion.div>
           <motion.div
             variants={{
@@ -57,7 +57,7 @@ const ContactDetails = () => {
             transition={{ duration: 0.1, type: "tween", ease: "easeIn" }}
             className="relative rounded-full py-1 md:py-2 px-6 text-stone-950 bg-stone-200 border-none"
           >
-            +91 7607320240
+            +91 8601329877
           </motion.div>
         </motion.div>
       </div>

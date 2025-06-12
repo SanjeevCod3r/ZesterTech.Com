@@ -33,7 +33,7 @@ const Services = () => {
             transition={{ duration: 0.2 }}
             className="relative rounded-full py-9 md:py-16 text-stone-900/90 border-2 bg-white border-none"
           >
-            How we work
+            Contact Us
           </motion.div>
           <motion.div
             variants={{
@@ -43,7 +43,7 @@ const Services = () => {
             transition={{ duration: 0.2, type: "tween", ease: "easeIn" }}
             className="absolute inset-0 rounded-xl py-9 md:py-16 text-white border-2 bg-stone-950 border-none"
           >
-            How we work
+            support@zestertech.com
           </motion.div>
         </motion.div>
       </div>
