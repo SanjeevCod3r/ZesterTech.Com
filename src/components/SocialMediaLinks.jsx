@@ -38,7 +38,7 @@ const SocialMediaLinks = () => {
     },
     {
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/company/zestertech",
     },
     {
       name: "Instagram",
