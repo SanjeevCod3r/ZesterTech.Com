@@ -34,7 +34,7 @@ const SocialMediaLinks = () => {
   const socialLinks = [
     {
       name: "Twitter",
-      url: "https://x.com/zestertech",
+      url: "https://x.com/TechZester",
     },
     {
       name: "LinkedIn",
@@ -42,7 +42,7 @@ const SocialMediaLinks = () => {
     },
     {
       name: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/zestertech/",
     },
     {
       name: "WhatsApp",
