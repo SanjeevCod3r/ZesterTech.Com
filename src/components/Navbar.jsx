@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className='md:hidden bg-white p-3 space-y-3'>
           <button className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>About Us</button>
           <button className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>Contact</button>
-          <a href='https://wa.me/message/3GE5JHLTIOBRI1' target='_blank' className='bg-black text-white w-full px-4 py-1.5 rounded-md'>Get Started</a>
+          <a href='https://wa.me/message/3GE5JHLTIOBRI1' target='_blank' className='bg-black text-white w-full px-3 py-1.5 rounded-md'>Get Started</a>
         </div>
       )}
     </div>
