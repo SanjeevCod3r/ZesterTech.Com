@@ -4,12 +4,13 @@ import babliimage from '../images/babliimage.jpeg';
 import nihalimage from '../images/nihalimage.jpeg';
 import vivekimage from '../images/vivekimage.jpeg';
 import sanjeevimage from '../images/sanjeevimage.jpeg';
+import shimage from '../images/shimage.jpeg';
 
 export const teamMembers = [
     {
       name: 'Sanjeev Jaiswal',
       position: 'Founder & CEO',
-      bio: 'With 15 years of total experience, including 10 years in real estate, driving growth and success',
+      bio: 'Engineer turned tech CEO building scalable, impactful digital tech ventures',
       image: sanjeevimage,
       social: {
         linkedin: '#',
@@ -20,7 +21,7 @@ export const teamMembers = [
    {
       name: 'Navneet Kumar Singh',
       position: 'Co-Founder & CFO',
-      bio: 'With 6 years of experience, supporting company growth and progress',
+      bio: 'Accomplished in sales with elite experience at Apple and American Express',
       image: navneetimage,
       social: {
         linkedin: '#',
@@ -31,8 +32,8 @@ export const teamMembers = [
     {
       name: 'Shrestha Gupta',
       position: 'Advisor & Mentor',
-      bio: 'With 6 years of total experience, including 4 years in real estate, driving growth and success',
-      image: ravinderimage,
+      bio: 'Championing growth with mentorship, thoughtful strategy, and business wisdom',
+      image: shimage,
       social: {
         linkedin: '#',
         twitter: '#',
@@ -42,7 +43,7 @@ export const teamMembers = [
     {
       name: 'Nihal Anand',
       position: 'Chief Marketing Manager',
-      bio: 'With 8 years of total experience, including 4 years in real estate',
+      bio: ' Driving retail success through strategic marketing, 4 years’ experience, and 3 thriving marts managed',
       image: nihalimage,
       social: {
         linkedin: '#',
@@ -53,7 +54,7 @@ export const teamMembers = [
     {
       name: 'Babali Bharti',
       position: 'Head of Operation & Management',
-      bio: 'With 8 years of total experience, including 4 years in real estate',
+      bio: 'Experienced Head of Operations ensuring seamless processes, team alignment, and high-impact management strategies',
       image: babliimage,
       social: {
         linkedin: '#',
@@ -64,7 +65,7 @@ export const teamMembers = [
     {
       name: 'Vivek Kumar',
       position: 'North Sales Head',
-      bio: 'With 8 years of total experience, including 4 years in real estate',
+      bio: 'Leading North India sales with strong strategy, team leadership, and consistent revenue performance',
       image: vivekimage,
       social: {
         linkedin: '#',
