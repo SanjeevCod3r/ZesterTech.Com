@@ -1,4 +1,5 @@
 import React from 'react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function ContactInfoItem({ icon: Icon, title, content, link }) {
   const ContentWrapper = link ? 'a' : 'div';
