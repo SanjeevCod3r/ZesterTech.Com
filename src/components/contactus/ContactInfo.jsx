@@ -7,20 +7,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone',
-    content: '+91 7827529358',
-    link: 'tel:+917827529358',
+    content: '+91 8601329877',
+    link: 'tel:+918601329877',
   },
   {
     icon: Mail,
     title: 'Email',
-    content: 'support@rareinfra.com',
-    link: 'mailto:support@rareinfra.com',
+    content: 'support@zestertech.com',
+    link: 'mailto:support@zestertech.com',
   },
   {
     icon: MapPin,
     title: 'Address',
-    content: 'Basement H-196 Sector 63, Noida, Uttar Pradesh 201307, IN',
-    link: 'https://maps.app.goo.gl/uqLDis7MKoHTtWKL7',
+    content: 'Bakshi House, 40-41, near Chiranjiv Tower, Nehru Place, New Delhi, Delhi 110019',
+    link: 'https://maps.app.goo.gl/DAky2kqA8HQmxxEU8',
   },
   {
     icon: Clock,
