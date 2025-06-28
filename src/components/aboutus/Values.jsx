@@ -1,39 +1,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Clock, CheckCircle } from 'lucide-react';
+import { Lightbulb, Star, Users } from 'lucide-react';
 
 const values = [
   {
-    icon: Shield,
-    title: 'Trust',
-    description: 'We verify all property owners and renters to ensure a safe and reliable experience for everyone.',
+    icon: Lightbulb,
+    title: 'Innovation',
+    description: 'We embrace creativity and modern tech to deliver unique solutions.',
   },
   {
-    icon: CheckCircle,
-    title: 'Transparency',
-    description: 'Clear and honest property listings with accurate information and no hidden fees.',
+    icon: Star,
+    title: 'Excellence',
+    description: 'Committed to top-tier design, development, and client satisfaction.',
   },
   {
-    icon: Clock,
-    title: 'Efficiency',
-    description: 'Streamlined property search and listing process to save you time and effort.',
+    icon: Users,
+    title: 'Collaboration',
+    description: 'We build long-term partnerships through transparency, trust, and teamwork.',
   },
 ];
 
 export default function Values() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-24 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Values</h2>
-          <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            These core values guide everything we do at ZesterTech
+          <h2 className="text-4xl font-bold mb-4 tracking-tight">Our Values</h2>
+          <div className="w-24 h-1 bg-white mx-auto mb-6 rounded"></div>
+          <p className="max-w-2xl mx-auto text-lg text-gray-400">
+            These core values guide everything we do at ZesterTech.
           </p>
         </motion.div>
 
@@ -46,15 +47,15 @@ export default function Values() {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                transition={{ delay: index * 0.2, duration: 0.5 }}
+                className="bg-black p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition-all duration-300 cursor-pointer"
                 whileHover={{ y: -5 }}
               >
-                <div className="w-16 h-16 bg-black/10 rounded-2xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
-                  <Icon className="w-8 h-8 text-black" />
+                <div className="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                  <Icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-lg">{value.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-center">{value.title}</h3>
+                <p className="text-gray-400 leading-relaxed text-center">{value.description}</p>
               </motion.div>
             );
           })}

@@ -28,9 +28,8 @@ export default function MissionVision() {
               <h2 className="text-2xl font-bold">Our Mission</h2>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              To provide a transparent and efficient property rental experience for all users. 
-              We strive to make the process of finding your perfect home as seamless as possible, 
-              while maintaining the highest standards of service and integrity.
+            To empower brands and businesses by crafting exceptional digital experiences through innovative design, 
+            seamless technology, and customer-centric strategies.
             </p>
           </motion.div>
 
@@ -45,9 +44,8 @@ export default function MissionVision() {
               <h2 className="text-2xl font-bold">Our Vision</h2>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Empowering millions of users to find their perfect home with ease and trust. 
-              We envision a future where property search is not just about finding a place to live, 
-              but about discovering a community to belong to.
+              To be a global leader in digital innovation—where creativity meets technology—to shape 
+              the future of user experience and brand identity.
             </p>
           </motion.div>
         </div>

@@ -1,20 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Home, Target } from 'lucide-react';
+import { Rocket, Users, Package, Heart } from 'lucide-react';
 import CountUp from './Contup';
 
 const milestones = [
   {
-    icon: Home,
-    title: 'Properties Listed',
-    value: 1005,
-    description: 'And growing daily',
+    icon: Package,
+    title: 'Projects Deployed',
+    value: 12,
+    description: 'Successful deployments across platforms',
   },
   {
-    icon: Target,
-    title: 'Happy Clients',
-    value: 5035,
-    description: 'Satisfied customers',
+    icon: Users,
+    title: 'Active Users',
+    value: 12000,
+    description: 'Engaged early adopters',
+  },
+  {
+    icon: Heart,
+    title: 'Customer Satisfaction',
+    value: 95,
+    description: '% positive feedback from users',
+  },
+  {
+    icon: Rocket,
+    title: 'Team Members',
+    value: 20,
+    description: 'Passionate startup crew',
   },
 ];
 
@@ -28,10 +40,10 @@ export default function Milestones() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Journey So Far</h2>
+          <h2 className="text-4xl font-bold mb-4">Our Startup Journey</h2>
           <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Milestones that mark our growth and success
+            Milestones marking our growth and ambitions
           </p>
         </motion.div>
 
@@ -53,6 +65,7 @@ export default function Milestones() {
                 </div>
                 <h3 className="text-5xl font-bold text-black mb-4">
                   <CountUp from={0} to={milestone.value} duration={2} separator="," />
+                  {milestone.title === 'Customer Satisfaction' ? '%' : ''}
                 </h3>
                 <p className="text-2xl font-semibold mb-3">{milestone.title}</p>
                 <p className="text-gray-600 text-lg">{milestone.description}</p>
