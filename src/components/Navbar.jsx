@@ -13,6 +13,7 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className='hidden md:flex space-x-4 items-center'>
+          <Link to='/' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>Home</Link>
           <Link to='/about' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>About Us</Link>
           <Link to='/contact' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>Contact</Link>
           <button className='bg-black text-white px-4 py-1.5 rounded-md flex items-center hover:bg-gray-800 transition-colors'>
@@ -31,9 +32,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className='md:hidden bg-white p-3 space-y-3'>
-          <Link to='/about' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>About Us</Link>
-          <Link to='/contact' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>Contact</Link>
+        <div className='md:hidden bg-white p-3 flex flex-col space-y-3'>
+          <Link to='/' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors block'>Home</Link>
+          <Link to='/about' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md block'>About Us</Link>
+          <Link to='/contact' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md block'>Contact</Link>
           <button className='bg-black text-white w-full px-4 py-1.5 rounded-md'>Get Started</button>
         </div>
       )}

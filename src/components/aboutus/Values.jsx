@@ -31,7 +31,7 @@ export default function Values() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Our Values</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             These core values guide everything we do at ZesterTech
           </p>
@@ -50,8 +50,8 @@ export default function Values() {
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
                 whileHover={{ y: -5 }}
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
-                  <Icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-black/10 rounded-2xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                  <Icon className="w-8 h-8 text-black" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">{value.description}</p>

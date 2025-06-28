@@ -20,7 +20,7 @@ const Contact = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               Contact Us
             </h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+            <div className="w-24 h-1 bg-black mx-auto mb-4"></div>
           </div>
           <div className="grid lg:grid-cols-2 gap-12">
             <ContactForm />
