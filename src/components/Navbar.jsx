@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { HiArrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,8 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className='hidden md:flex space-x-4 items-center'>
-          <button className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>About Us</button>
-          <button className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>Contact</button>
+          <Link to='/about' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>About Us</Link>
+          <Link to='/contact' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors'>Contact</Link>
           <button className='bg-black text-white px-4 py-1.5 rounded-md flex items-center hover:bg-gray-800 transition-colors'>
             Get Started <HiArrowRight className='ml-1.5' />
           </button>
@@ -31,8 +32,8 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className='md:hidden bg-white p-3 space-y-3'>
-          <button className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>About Us</button>
-          <button className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>Contact</button>
+          <Link to='/about' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>About Us</Link>
+          <Link to='/contact' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md'>Contact</Link>
           <button className='bg-black text-white w-full px-4 py-1.5 rounded-md'>Get Started</button>
         </div>
       )}

@@ -1,35 +1,27 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Reel from "./components/Reel";
-import Services from "./components/Services";
-import Projects from "./components/Projects";
-import Philosophy from "./components/Philosophy";
-import FollowUs from "./components/FollowUs";
-import SocialMediaLinks from "./components/SocialMediaLinks";
-import ContactDetails from "./components/ContactDetails";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
-  
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      new LocomotiveScroll();
     })();
   }, []);
 
   return (
-    <div className="w-full">
+    <Router>
       <Navbar />
-      <Hero />
-      <Reel />
-      <Services />
-      <Projects />
-      <Philosophy />
-      <FollowUs />
-      <SocialMediaLinks />
-      <ContactDetails />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 };
 
