@@ -1,11 +1,16 @@
 import ravinderimage from '../images/ravinderimage.jpeg';
+import navneetimage from '../images/navneetimage.jpeg';
+import babliimage from '../images/babliimage.jpeg';
+import nihalimage from '../images/nihalimage.jpeg';
+import vivekimage from '../images/vivekimage.jpeg';
+import sanjeevimage from '../images/sanjeevimage.jpeg';
 
 export const teamMembers = [
     {
-      name: 'Kunwardeep Singh',
-      position: 'Business Head',
+      name: 'Sanjeev Jaiswal',
+      position: 'Founder & CEO',
       bio: 'With 15 years of total experience, including 10 years in real estate, driving growth and success',
-      image: ravinderimage,
+      image: sanjeevimage,
       social: {
         linkedin: '#',
         twitter: '#',
@@ -14,9 +19,9 @@ export const teamMembers = [
     },
    {
       name: 'Navneet Kumar Singh',
-      position: 'Sub Business Head',
+      position: 'Co-Founder & CFO',
       bio: 'With 6 years of experience, supporting company growth and progress',
-      image: ravinderimage,
+      image: navneetimage,
       social: {
         linkedin: '#',
         twitter: '#',
@@ -24,8 +29,8 @@ export const teamMembers = [
       },
     },
     {
-      name: 'Vibhor Gautam',
-      position: 'Sub Business Head',
+      name: 'Shrestha Gupta',
+      position: 'Advisor & Mentor',
       bio: 'With 6 years of total experience, including 4 years in real estate, driving growth and success',
       image: ravinderimage,
       social: {
@@ -35,10 +40,10 @@ export const teamMembers = [
       },
     },
     {
-      name: 'Deepak Kumar Jindal',
-      position: 'Sub Business Head',
+      name: 'Nihal Anand',
+      position: 'Chief Marketing Manager',
       bio: 'With 8 years of total experience, including 4 years in real estate',
-      image: ravinderimage,
+      image: nihalimage,
       social: {
         linkedin: '#',
         twitter: '#',
@@ -46,10 +51,10 @@ export const teamMembers = [
       },
     },
     {
-      name: 'Deepak Kumar Jindal',
-      position: 'Sub Business Head',
+      name: 'Babali Bharti',
+      position: 'Head of Operation & Management',
       bio: 'With 8 years of total experience, including 4 years in real estate',
-      image: ravinderimage,
+      image: babliimage,
       social: {
         linkedin: '#',
         twitter: '#',
@@ -57,10 +62,10 @@ export const teamMembers = [
       },
     },
     {
-      name: 'Deepak Kumar Jindal',
-      position: 'Sub Business Head',
+      name: 'Vivek Kumar',
+      position: 'North Sales Head',
       bio: 'With 8 years of total experience, including 4 years in real estate',
-      image: ravinderimage,
+      image: vivekimage,
       social: {
         linkedin: '#',
         twitter: '#',
