@@ -33,9 +33,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className='md:hidden bg-white p-3 flex flex-col space-y-3'>
-          <Link to='/' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors block'>Home</Link>
-          <Link to='/about' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md block'>About Us</Link>
-          <Link to='/contact' className='text-black w-full px-3 py-1.5 hover:bg-gray-100 rounded-md block'>Contact</Link>
+          <Link to='/' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors block text-center'>Home</Link>
+          <Link to='/about' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors block text-center'>About Us</Link>
+          <Link to='/contact' className='text-black px-3 py-1.5 hover:bg-gray-100 rounded-md transition-colors block text-center'>Contact</Link>
           <button className='bg-black text-white w-full px-4 py-1.5 rounded-md'>Get Started</button>
         </div>
       )}
