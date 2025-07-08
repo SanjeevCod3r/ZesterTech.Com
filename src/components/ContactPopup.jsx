@@ -13,7 +13,7 @@ import './ContactPopup.css';
 
 const ContactPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -28,9 +28,9 @@ const ContactPopup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsOpen(false);
-    setShowSuccess(true);
+    setSubmitted(true);
 
+    // Clear form
     setFormData({
       name: '',
       phone: '',
@@ -38,9 +38,11 @@ const ContactPopup = () => {
       message: ''
     });
 
+    // Auto-close after 2 seconds
     setTimeout(() => {
-      setShowSuccess(false);
-    }, 1500);
+      setSubmitted(false);
+      setIsOpen(false);
+    }, 2000);
   };
 
   const handleChange = (e) => {
@@ -52,32 +54,37 @@ const ContactPopup = () => {
   };
 
   return (
-    <>
-      <AnimatePresence>
-        {isOpen && (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className="popup-overlay"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           <motion.div
-            className="popup-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="popup-container"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 100 }}
           >
-            <motion.div
-              className="popup-container"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 100 }}
+            <motion.button
+              className="close-btn"
+              onClick={() => setIsOpen(false)}
+              whileHover={{ rotate: 180, scale: 1.2 }}
             >
-              <motion.button
-                className="close-btn"
-                onClick={() => setIsOpen(false)}
-                whileHover={{ rotate: 180, scale: 1.2 }}
-              >
-                <FontAwesomeIcon icon={faTimes} />
-              </motion.button>
+              <FontAwesomeIcon icon={faTimes} />
+            </motion.button>
 
-              <h2 className="popup-title">Your Requirement</h2>
+            <h2 className="popup-title">Your Requirement</h2>
 
+            {submitted ? (
+              <div className="form-success">
+                <FontAwesomeIcon icon={faCheckCircle} className="success-icon" />
+                <p>Thank you for submitting your requirement!</p>
+              </div>
+            ) : (
               <form className="popup-form" onSubmit={handleSubmit}>
                 {[
                   { name: 'name', type: 'text', placeholder: 'Name', icon: faUser },
@@ -104,7 +111,6 @@ const ContactPopup = () => {
                     name="message"
                     required
                     placeholder=" "
-                    rows={3}
                     value={formData.message}
                     onChange={handleChange}
                   ></textarea>
@@ -120,28 +126,11 @@ const ContactPopup = () => {
                   Send
                 </motion.button>
               </form>
-            </motion.div>
+            )}
           </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {showSuccess && (
-          <motion.div
-            className="global-success-message"
-            initial={{ opacity: 0, scale: 0.8, y: -20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-          >
-            <div className="success-text">
-              <FontAwesomeIcon icon={faCheckCircle} className="success-icon" />
-              <p>Your requirement has been submitted successfully!</p>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
