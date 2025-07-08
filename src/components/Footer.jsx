@@ -15,7 +15,7 @@ const Footer = () => {
     <FooterContainer>
       <Content>
         <Column>
-          <Logo>zester</Logo>
+          <Logo>Zester Tech</Logo>
           <Description>
             Transforming digital experiences with cutting-edge technology and creative solutions.
           </Description>
@@ -42,8 +42,8 @@ const Footer = () => {
           <Title>Contact Us</Title>
           <ContactInfo>
             <div><FaMapMarkerAlt /><span>123 Tech Street, Silicon Valley, CA</span></div>
-            <div><FaPhone /><span>+1 234 567 8900</span></div>
-            <div><FaEnvelope /><span>info@zester.com</span></div>
+            <div><FaPhone /><span>+91 8601329877</span></div>
+            <div><FaEnvelope /><span>support@zestertech.com</span></div>
           </ContactInfo>
         </Column>
 
@@ -62,7 +62,7 @@ const Footer = () => {
       </Content>
 
       <BottomBar>
-        <p>&copy; {new Date().getFullYear()} Zester Technologies. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} ZesterTech. All rights reserved.</p>
         <p>
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </p>
