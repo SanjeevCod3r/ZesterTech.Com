@@ -92,9 +92,9 @@ body {
   pointer-events: none;
 }
 
-.popup-field input:focus ~ label,
+/* Floating label trigger */
+.popup-field:focus-within label,
 .popup-field input:not(:placeholder-shown) ~ label,
-.popup-field textarea:focus ~ label,
 .popup-field textarea:not(:placeholder-shown) ~ label {
   top: -0.6rem;
   left: 2.6rem;
@@ -125,6 +125,10 @@ body {
 }
 
 .global-success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(20, 20, 20, 0.95);
   padding: 1.5rem;
   border-radius: 12px;
@@ -137,6 +141,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
 .global-success-message .success-text {

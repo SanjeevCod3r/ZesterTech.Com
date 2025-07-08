@@ -28,14 +28,9 @@ const ContactPopup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Close the form popup
     setIsOpen(false);
-
-    // Show success message
     setShowSuccess(true);
 
-    // Clear form fields
     setFormData({
       name: '',
       phone: '',
@@ -43,7 +38,6 @@ const ContactPopup = () => {
       message: ''
     });
 
-    // Hide success after 1.5 seconds
     setTimeout(() => {
       setShowSuccess(false);
     }, 1500);
@@ -103,6 +97,7 @@ const ContactPopup = () => {
                     <label>{field.placeholder}</label>
                   </div>
                 ))}
+
                 <div className="popup-field">
                   <FontAwesomeIcon icon={faEdit} className="popup-icon" />
                   <textarea
@@ -130,25 +125,14 @@ const ContactPopup = () => {
         )}
       </AnimatePresence>
 
-      {/* Global Success Message */}
       <AnimatePresence>
         {showSuccess && (
           <motion.div
             className="global-success-message"
-            style={{
-              position: 'fixed',
-              top: '50%',
-              left: '40%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 9999
-            }}
             initial={{ opacity: 0, scale: 0.8, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{
-              duration: 0.4,
-              ease: "easeOut"
-            }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
           >
             <div className="success-text">
               <FontAwesomeIcon icon={faCheckCircle} className="success-icon" />
