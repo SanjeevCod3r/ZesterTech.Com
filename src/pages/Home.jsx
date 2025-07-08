@@ -11,11 +11,13 @@ import FollowUs from "../components/FollowUs";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactDetails from "../components/ContactDetails";
 import ContactPopup from "../components/ContactPopup";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
     <>
       <ContactPopup />
+      
       <Hero />
       <Reel />
       <Projects />
@@ -23,6 +25,7 @@ const Home = () => {
       <Philosophy />
       <WhatWeDo />
       <FAQ />
+      <Testimonials />
       <FollowUs />
       <SocialMediaLinks />
       <ContactDetails />
