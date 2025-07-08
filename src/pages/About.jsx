@@ -7,6 +7,7 @@ import Team from '../components/aboutus/Team';
 import FollowUs from "../components/FollowUs";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactDetails from "../components/ContactDetails";
+import Footer from "../components/Footer";
 
 const About = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const About = () => {
       <FollowUs />
       <SocialMediaLinks />
       <ContactDetails />
+      <Footer />
     </div>
   )
 }

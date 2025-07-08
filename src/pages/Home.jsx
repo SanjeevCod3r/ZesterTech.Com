@@ -12,6 +12,7 @@ import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactDetails from "../components/ContactDetails";
 import ContactPopup from "../components/ContactPopup";
 import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <FollowUs />
       <SocialMediaLinks />
       <ContactDetails />
+      <Footer />
     </>
   );
 };

@@ -5,6 +5,7 @@ import ContactInfo from "../components/contactus/ContactInfo";
 import FollowUs from "../components/FollowUs";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactDetails from "../components/ContactDetails";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -31,6 +32,7 @@ const Contact = () => {
       <FollowUs />
       <SocialMediaLinks />
       <ContactDetails />
+      <Footer />
     </div>
   );
 };
