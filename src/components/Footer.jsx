@@ -15,7 +15,7 @@ const Footer = () => {
     <FooterContainer>
       <Content>
         <Column>
-          <Logo>zester Tech</Logo>
+          <Logo>zester</Logo>
           <Description>
             Transforming digital experiences with cutting-edge technology and creative solutions.
           </Description>
@@ -50,7 +50,9 @@ const Footer = () => {
         <Column>
           <Title>Newsletter</Title>
           <Newsletter>
-            <p>Subscribe to our newsletter for latest updates.</p>
+            <NewsletterText>
+              Subscribe to our newsletter for latest updates.
+            </NewsletterText>
             <form>
               <input type="email" placeholder="Enter your email" />
               <button type="submit">Subscribe</button>
@@ -76,6 +78,10 @@ const FooterContainer = styled.footer`
   color: #eee;
   padding: 80px 0 30px;
   font-family: 'Segoe UI', sans-serif;
+
+  @media (max-width: 600px) {
+    padding: 50px 15px 20px;
+  }
 `;
 
 const Content = styled.div`
@@ -84,7 +90,11 @@ const Content = styled.div`
   padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Column = styled.div`
@@ -172,27 +182,29 @@ const ContactInfo = styled.div`
 `;
 
 const Newsletter = styled.div`
-  p {
-    color: #bbb;
-    font-size: 0.95rem;
-  }
-
   form {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 
     input {
-      flex: 1;
+      flex: 1 1 200px;
       padding: 10px;
       background: #111;
       color: #fff;
       border: 1px solid #333;
       border-radius: 5px;
+      font-size: 0.9rem;
 
       &:focus {
         outline: none;
         border-color: #fff;
+      }
+
+      @media (max-width: 500px) {
+        padding: 8px;
+        font-size: 0.85rem;
       }
     }
 
@@ -205,11 +217,37 @@ const Newsletter = styled.div`
       border-radius: 5px;
       cursor: pointer;
       transition: background 0.3s;
+      font-size: 0.9rem;
 
       &:hover {
         background: #ddd;
       }
+
+      @media (max-width: 500px) {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        width: 100%;
+      }
     }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+const NewsletterText = styled.p`
+  color: #bbb;
+  font-size: 0.9rem;
+  margin: 0;
+
+  @media (max-width: 500px) {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 `;
 
@@ -223,6 +261,7 @@ const BottomBar = styled.div`
 
   p {
     margin: 5px 0;
+    word-break: break-word;
   }
 
   a {
@@ -233,6 +272,10 @@ const BottomBar = styled.div`
     &:hover {
       color: #fff;
     }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
   }
 `;
 
