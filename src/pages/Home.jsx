@@ -10,10 +10,12 @@ import FAQ from "../components/FAQ";
 import FollowUs from "../components/FollowUs";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactDetails from "../components/ContactDetails";
+import ContactPopup from "../components/ContactPopup";
 
 const Home = () => {
   return (
     <>
+      <ContactPopup />
       <Hero />
       <Reel />
       <Projects />
