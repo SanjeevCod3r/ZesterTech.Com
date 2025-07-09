@@ -188,7 +188,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <div className="contact-info">
             <div className="contact-item">
-              <FaEnvelope /> <a href="mailto:info@zester.tech">info@zester.tech</a>
+              <FaEnvelope /> <a href="mailto:info@zester.tech">support@zestertech.com</a>
             </div>
             <div className="contact-item">
               <FaPhoneAlt /> <a href="tel:+1234567890">+1 234 567 890</a>
