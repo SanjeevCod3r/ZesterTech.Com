@@ -52,7 +52,7 @@ export const teamMembers = [
       },
     },
     {
-      name: 'Babali Bharti',
+      name: 'Babli Bharti',
       position: 'Head of Operation & Management',
       bio: 'Experienced Head of Operations ensuring seamless processes, team alignment, and high-impact management strategies',
       image: babliimage,
