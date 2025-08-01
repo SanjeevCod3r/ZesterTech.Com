@@ -1,4 +1,4 @@
-import ravinderimage from '../images/ravinderimage.jpeg';
+
 import navneetimage from '../images/navneetimage.jpeg';
 import babliimage from '../images/babliimage.jpeg';
 import nihalimage from '../images/nihalimage.jpeg';
