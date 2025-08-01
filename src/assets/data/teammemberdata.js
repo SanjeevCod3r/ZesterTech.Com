@@ -28,6 +28,16 @@ export const teamMembers = [
         twitter: '#',
         instagram: '#',
       },
+    },{
+      name: 'Nihal Anand',
+      position: 'Chief Marketing Manager',
+      bio: ' Driving retail success through strategic marketing, 4 years’ experience, and 3 thriving marts managed',
+      image: nihalimage,
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        instagram: '#',
+      },
     },
     {
       name: 'Shrestha Gupta',
@@ -56,17 +66,6 @@ export const teamMembers = [
       position: 'Head of Operation & Management',
       bio: 'Experienced Head of Operations ensuring seamless processes, team alignment, and high-impact management strategies',
       image: babliimage,
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#',
-      },
-    },
-    {
-      name: 'Vivek Kumar',
-      position: 'North Sales Head',
-      bio: 'Leading North India sales with strong strategy, team leadership, and consistent revenue performance',
-      image: vivekimage,
       social: {
         linkedin: '#',
         twitter: '#',
