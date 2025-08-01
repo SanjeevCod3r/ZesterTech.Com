@@ -5,6 +5,7 @@ import nihalimage from '../images/nihalimage.jpeg';
 import vivekimage from '../images/vivekimage.jpeg';
 import sanjeevimage from '../images/sanjeevimage.jpeg';
 import shimage from '../images/shimage.jpeg';
+import ankushimage from '../images/ankushimage.jpeg';
 
 export const teamMembers = [
     {
@@ -29,10 +30,10 @@ export const teamMembers = [
         instagram: '#',
       },
     },{
-      name: 'Nihal Anand',
-      position: 'Chief Marketing Manager',
-      bio: ' Driving retail success through strategic marketing, 4 years’ experience, and 3 thriving marts managed',
-      image: nihalimage,
+      name: 'Ankush Kumar',
+      position: 'Director & Invester',
+      bio: 'An accomplished investor with over 5 years of experience, actively funding 4 thriving companies and successfully operating a chain of 15+ retail outlets',
+      image: ankushimage,
       social: {
         linkedin: '#',
         twitter: '#',
