@@ -33,7 +33,7 @@ export const teamMembers = [
     {
       name: 'Ankush Kumar',
       position: 'Director & Invester',
-      bio: 'An accomplished investor with over 5 years of experience, actively funding 4 thriving companies and successfully operating a chain of 15+ retail outlets',
+      bio: 'Experienced investor funding 4 companies and running 15+ successful retail outlets',
       image: ankushimage,
       social: {
         linkedin: '#',
