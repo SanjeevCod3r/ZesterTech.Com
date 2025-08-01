@@ -5,7 +5,7 @@ import nihalimage from '../images/nihalimage.jpeg';
 import vivekimage from '../images/vivekimage.jpeg';
 import sanjeevimage from '../images/sanjeevimage.jpeg';
 import shimage from '../images/shimage.jpeg';
-import ankushimage from '../images/ankushimage.jpeg';
+import ankushimage from '../images/ankushimage.jpg';
 
 export const teamMembers = [
     {
